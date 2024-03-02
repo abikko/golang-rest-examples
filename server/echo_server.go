@@ -8,6 +8,8 @@ import (
 	"fmt"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
+	echoSwagger "github.com/swaggo/echo-swagger"
+	_ "github.com/swaggo/echo-swagger/example/docs"
 	"gorm.io/gorm"
 )
 
@@ -28,9 +30,15 @@ func NewEchoServer(cfg *config.Config, db *gorm.DB) Server {
 func (s *echoServer) Start() {
 	s.initializeShopHttpHandler()
 	s.app.Use(middleware.Logger())
+	s.handleSwaggerDocs()
 
 	serverUrl := fmt.Sprintf(":%d", s.cfg.App.Port)
 	s.app.Logger.Fatal(s.app.Start(serverUrl))
+}
+
+func (server *echoServer) handleSwaggerDocs() {
+	app := server.app
+	app.GET("/swagger/*", echoSwagger.WrapHandler)
 }
 
 func (server *echoServer) initializeShopHttpHandler() {
