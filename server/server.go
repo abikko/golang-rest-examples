@@ -1,4 +1,5 @@
 package server
 
-type AppServer interface {
+type Server interface {
+	Start()
 }
