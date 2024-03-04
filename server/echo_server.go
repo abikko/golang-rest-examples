@@ -41,6 +41,8 @@ func (server *echoServer) handleSwaggerDocs() {
 	app.GET("/swagger/*", echoSwagger.WrapHandler)
 }
 
+// @Success 200 {object} handlers.BaseResponse
+// @Router /v1/shop [post]
 func (server *echoServer) initializeShopHttpHandler() {
 	shopPostgresRepository := repositories.NewShopPostgresRepository(server.db)
 

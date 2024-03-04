@@ -1,4 +1,17 @@
+definitions:
+  handlers.BaseResponse:
+    properties:
+      message:
+        type: string
+    type: object
 info:
   contact: {}
-paths: {}
+paths:
+  /v1/shop:
+    post:
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handlers.BaseResponse'
 swagger: "2.0"

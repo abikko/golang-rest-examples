@@ -6,6 +6,9 @@ import (
 	"awesomeProject/server"
 )
 
+//	@title			Swaggerbleat nahuy
+//	@version		1.0
+//	@description	omaigadebat
 func main() {
 	cfg := config.GetConfig()
 
