@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"awesomeProject/shop/entities"
+	"awesomeProject/feature/shop/entities"
 	"github.com/labstack/gommon/log"
 	"gorm.io/gorm"
 )

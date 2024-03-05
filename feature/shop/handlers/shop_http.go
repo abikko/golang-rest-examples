@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"awesomeProject/shop/models"
-	"awesomeProject/shop/usecases"
+	"awesomeProject/feature/shop/models"
+	"awesomeProject/feature/shop/usecases"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/gommon/log"
 	"net/http"

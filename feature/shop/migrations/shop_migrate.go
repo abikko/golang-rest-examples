@@ -3,7 +3,7 @@ package main
 import (
 	"awesomeProject/config"
 	"awesomeProject/database"
-	"awesomeProject/shop/entities"
+	"awesomeProject/feature/shop/entities"
 )
 
 func main() {

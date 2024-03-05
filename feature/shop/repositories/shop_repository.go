@@ -1,6 +1,8 @@
 package repositories
 
-import "awesomeProject/shop/entities"
+import (
+	"awesomeProject/feature/shop/entities"
+)
 
 type ShopRepository interface {
 	InsertShopData(in *entities.InsertShopDto) error

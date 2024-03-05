@@ -1,9 +1,9 @@
 package usecases
 
 import (
-	"awesomeProject/shop/entities"
-	"awesomeProject/shop/models"
-	"awesomeProject/shop/repositories"
+	"awesomeProject/feature/shop/entities"
+	"awesomeProject/feature/shop/models"
+	"awesomeProject/feature/shop/repositories"
 )
 
 type shopUseCaseImpl struct {

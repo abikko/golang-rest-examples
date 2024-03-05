@@ -2,9 +2,9 @@ package server
 
 import (
 	"awesomeProject/config"
-	"awesomeProject/shop/handlers"
-	"awesomeProject/shop/repositories"
-	"awesomeProject/shop/usecases"
+	"awesomeProject/feature/shop/handlers"
+	"awesomeProject/feature/shop/repositories"
+	"awesomeProject/feature/shop/usecases"
 	"fmt"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
