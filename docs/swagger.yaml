@@ -6,6 +6,9 @@ definitions:
     type: object
 info:
   contact: {}
+  description: Swagger docs example for pet project
+  title: Swagger
+  version: "1.0"
 paths:
   /v1/shop:
     post:

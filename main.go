@@ -6,9 +6,9 @@ import (
 	"awesomeProject/server"
 )
 
-//	@title			Swaggerbleat nahuy
+//	@title			Swagger
 //	@version		1.0
-//	@description	omaigadebat
+//	@description	Swagger docs example for pet project
 func main() {
 	cfg := config.GetConfig()
 

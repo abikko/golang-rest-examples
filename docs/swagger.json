@@ -1,7 +1,10 @@
 {
     "swagger": "2.0",
     "info": {
-        "contact": {}
+        "description": "Swagger docs example for pet project",
+        "title": "Swagger",
+        "contact": {},
+        "version": "1.0"
     },
     "paths": {
         "/v1/shop": {
